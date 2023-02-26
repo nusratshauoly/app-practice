@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leen</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans:wght@400;600;700&family=Noto+Serif+Bengali&family=Oleo+Script:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./resources/styles.css">
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford:'#da373d',
+                background:'#E5E5E5',
+                color:'#D63F48',
+                selectTitleColor:'#E53345',
+                textColor:'#1F2045',
+                whiteBackground:'#FFFFFF'
+            },
+            fontFamily: {
+                banglaTitle:"'Noto Serif Bengali', serif",
+                allFonts:"'Noto Sans', sans-serif",
+                mainTitle:"'Alfa Slab One', cursive",
+                allTitle:"'Oswald', sans-serif",
+                logoFont:"'Oleo Script', cursive",
+            },
+            width:{
+                'firstSectionImageWidth':'41.75rem',
+                'thirdSectionImageWidth':'37.563rem',
+                'fourthSectionImageWidth':'23.563rem',
+                'fourthSectionButtonWidth':'19.813rem',
+                'sixthSectionImageWidth':'33.75rem',
+                'sixthSectionInputWidth':'30.75rem',
+                'sixthSectionButtonWidth':'11.688rem',
+
+                
+            },
+            height:{
+                'firstSectionImageHeight':'30.25rem',
+                'thirdSectionImageHeight':'33.313rem',
+                'fourthSectionImageHeight':'23.5rem',
+                'fourthSectionButtonHeight':'19.813rem',
+                'sixthSectionInputHeight':'4.375rem',
+                'sixthSectionTextareaHeight':'15.313rem',
+                'footerHeight':'5.625rem',
+
+            },
+            fontSize:{
+                'allTitle':['40px', '57px'], 
+            },
+            spacing:{
+                 'sixthMarginBottom':'-20px',
+                 'sixthPaddingBottom':'-40px',
+            },
+
+            }
+        }
+        }
+    </script>
+    </head>
+
+    <body class="bg-background">
+        <!-- background top section -->
+            <div class="container mx-auto px-4 py-3 md:w-screen" id="any-question">
+                <div class="flex justify-between">
+                    <div class="flex space-x-8">
+                       <!-- Website contact -->
+                        <div class="text-sm space-x-1 sm:inline font-allFonts">
+                            <a class="font-normal text-textColor">Have any questions?</a>
+                            <a href="tel:+8801406666430" class="font-bold text-color">+880 140 6666 430</a>
+                            <a href="contact@leen.health" class="font-normal text-textColor hover:text-color">contact@leen.health</a>
+                        </div>						
+                    </div>
+                    <!--  font section -->
+                    <div class="items-center space-x-3 text-sm px-2">
+                        <a href="" class="font-semibold text-selectTitleColor font-allFonts">English</a>
+                        <a href="" class="font-normal font-banglaTitle text-textColor">বাংলা</a>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- header section starts -->
+            <header class="sticky top-0 nav-bar">
+                <div class="bg-white drop-shadow-lg ">
+                    <nav class="container mx-auto px-4 ">
+                        <div class="flex justify-between text-center">
+                    <!-- Website Logo -->
+                            <h2 class="py-4 text-4xl italic text-languageColor font-bold text-color">leen</h2>
+                    <!-- Navbar items -->
+                            <div class="hidden md:flex items-center space-x-3 text-lg font-bold text-textColor font-allFonts">
+                                <a href="#how-it-works" class="py-4 px-2 hover:text-contactColor">How it works</a>
+                                <a href="#sponsor" class="py-4 px-2 hover:text-contactColor">Become a Sponsor</a>
+                                <a href="#faq" class="py-4 px-2 hover:text-contactColor">FAQ</a>
+                                <a href="#contact" class="py-4 px-2 hover:text-contactColor">Contact</a>
+                                <a href="" class="py-4 px-2 hover:text-contactColor">Sign in</a>
+                                <a href="" class="py-4 px-2 hover:text-contactColor">Sign up</a>
+                            </div>
+                    <!-- Mobile menu button -->
+                            <div class="md:hidden flex items-center">
+                                <button class="outline-none mobile-menu-button">
+                                    <svg class="w-6 h-6 text-gray-500"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    <!-- mobile menu -->
+                        <div class="hidden mobile-menu">
+                            <div class="font-bold text-textColor font-allFonts text-center text-sm">
+                                <a href="#how-it-works" class="block px-2 py-4  hover:text-contactColor">How it works</a>
+                                <a href="#sponsor" class="block px-2 py-4 hover:text-contactColor">Become a Sponsor</a>
+                                <a href="#faq" class="block px-2 py-4 hover:text-contactColor">FAQ</a>
+                                <a href="#contact" class="block px-2 py-4 hover:text-contactColor">Contact</a>
+                                <a href="" class="block px-2 py-4 hover:text-contactColor">Sign in</a>
+                                <a href="" class="block px-2 py-4 hover:text-contactColor">Sign up</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+        <!-- main section starts -->
+            <main>
+                <!-- first section starts-->
+                    <section class="">
+                        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:h-screen md:h-screen lg:w-screen md:w-screen">
+                        <!-- About -->
+                            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                                <div class="sm:text-5xl text-3xl  mb-4 font-normal font-mainTitle">
+                                    <h1 class="text-color pb-4">Emergency Health Care</h1>
+                                    <h1 class="lg:inline-block text-textColor ">on Your Hand</h1>
+                                </div>
+                                <p class="mb-8 leading-relaxed sm:text-2xl text-base font-normal font-allFonts text-textColor">Doctors are available for you 24/7 Join leen & stay healthy</p>
+                                <div class="">
+                                    <button class="inline-flex border-0 py-2 px-8 focus:outline-none hover:bg-contactColor rounded text-2xl font-normal font-allFonts text-textColor items-center"><img class="w-16" src="./images/first-section/button.png" alt="">Join now</button>
+                                </div>
+                            </div>
+                        <!-- image -->
+                            <div class="lg:max-w-lg lg:w-full md:w-1/2">
+                                <img class="object-cover object-center rounded-tl-lg rounded-bl-lg w-[41.75rem] h-[30.25rem]" alt="image of a doctor" src="./images/first-section/ person1.png">
+                            </div>
+                        </div>
+                    </section>
+
+                <!-- second section -->
+                   
+                    
+                        <section class="bg-whiteBackground" id="how-it-works" >
+                        <!-- title -->
+                            <div class="sm:text-left text-center pt-20 pl-18 md:pl-8 pb-14">
+                                <h1 class="sm:text-5xl text-[40px] font-allTitle font-bold text-textColor">How It works</h1>
+                            </div>
+                            <div class="container px-5 py-8 mx-auto lg:h-screen md:h-screen items-center lg:w-screen md:w-screen ">
+                                <div class="flex flex-wrap sm:m-4 mx-4 mt-4 md:space-y-0 space-y-6 md:flex-row flex-col">
+                            <!-- first part -->
+                                    <div class="p-4 md:w-1/3 flex flex-col text-center items-center justify-center">
+                                        <div class="w-56 h-56 inline-flex items-center justify-center mb-5">
+                                            <img src="./images/second-section/image1.png" alt="image of a feeling sick">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <h2 class="text-2xl font-allFonts font-bold text-textColor mb-3">1. Are you feeling sick?</h2>
+                                            <p class="leading-relaxed text-xl font-allFonts text-textColor font-normal">Leen is here for you Join & Let your  doctor know the problem. Stay Healthy!</p>
+                                        </div>
+                                    </div>
+                            <!-- 2nd part -->
+                                    <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                                        <div class="w-56 h-56 inline-flex items-center justify-center mb-5">
+                                            <img src="./images/second-section/image2.png" alt="image of a install and sign up form">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <h2 class="text-2xl font-allFonts font-bold text-textColor mb-3">2. Install and Sign up on Leen</h2>
+                                            <p class="leading-relaxed text-xl font-allFonts text-textColor font-normal">Leen is here for you Join & Let your  doctor know the problem. Stay Healthy!</p>
+                                        </div>
+                                    </div>
+                            <!-- 3rd part -->
+                                    <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                                        <div class="w-56 h-56 inline-flex items-center justify-center mb-5">
+                                            <img src="./images/second-section/image3.png" alt="image of a patients service">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <h2 class="text-2xl font-allFonts font-bold text-textColor mb-3">3.Make the call and Explain 
+                                        your condition</h2>
+                                            <p class="leading-relaxed text-xl font-allFonts text-textColor font-normal">Leen is here for you Join & Let your  doctor know the problem. Stay Healthy!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+
+                <!-- third section starts -->
+                    <section class="">
+                        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:h-screen md:h-screen lg:w-screen md:w-screen md:mt-16">
+                        <!-- image -->
+                            <div class="lg:max-w-lg lg:w-[37.563rem] lg:h-[33.313rem] md:w-1/2 w-5/6 mb-10 md:mb-0">
+                                <img class="object-cover object-center rounded" alt="hero" src="./images/third-section/Rectangle 22 (1).png">
+                            </div>
+                        <!-- button image -->
+                            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                                <h1 class="sm:text-5xl text-[40px] mb-4 text-textColor font-bold font-allTitle"><span class="text-color">Download</span> the leen app</h1>
+                                <div class="flex lg:flex-row md:flex-col md:mt-4 mt-6">
+                                    <button>
+                                        <img src="./images/third-section/image 1.png" alt="">
+                                    </button>
+                                    <button class="lg:ml-4 md:ml-0 ml-4  ">
+                                    <img src="./images/third-section/image 2.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                <!-- fourth section starts-->
+                    <section class="bg-whiteBackground" id="sponsor">
+                        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:h-screen md:h-screen lg:w-screen md:w-screen">
+                            <!-- image -->
+                                <div class="lg:max-w-lg lg:w-[23.563rem] lg:h-[23.5rem] md:w-1/2 w-5/6 mb-10 md:mb-0">
+                                    <img class="object-cover object-center rounded" alt="hero" src="./images/fourth-section/depositphotos_76211603-stock-photo-team-of-smiling-doctors.jpeg">
+                                </div>
+                            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                            <!-- about -->
+                                <div class="sm:text-5xl text-[40px] mb-4 text-textColor font-bold font-allTitle">
+                                    <h1 class="">Are you a <span class="text-color">doctor</span> or</h1>
+                                    <h1 class="">represents a <span class="text-color">clinic</span> ?</h1>
+                                </div>
+                                <p class="mb-8 leading-relaxed md:mt-4 mt-6 text-justify text-xl text-textColor font-normal font-allFonts">leen needs you. Join leen doctor panel and help thousands of people. also earn for your time. It's win-win for everyone.</p>
+                                <div>
+                                    <button class="text-white bg-color border-0 w-[19.813rem] h-14 focus:outline-none rounded-2xl text-lg hover:bg-selectTitleColor">Join leen doctor panel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                <!-- fifth section -->
+                    <section class="bg-background lg:mb-36" id="faq">
+                        <div class="container px-5 py-24 mx-auto lg:h-screen md:h-screen lg:w-screen md:w-screen">
+                        <!-- title -->
+                            <div class="text-center pt-1 mb-24 pl-18 md:pl-8">
+                                <h1 class="sm:text-5xl text-[40px] font-allTitle font-bold text-textColor">How It works</h1>
+                            </div>
+                            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                            <!-- first part -->
+                                <div class="p-2 sm:w-1/2 w-full">
+                                    <div class="bg-whiteBackground rounded flex p-4 h-full items-center cursor-pointer mb-3">
+                                        <img src="./images/fifth-section/Fill.png" alt="">
+                                        <span class="font-normal text-base text-textColor font-allFonts pl-3 px-4 py-3">Which License do I need?</span>
+                                        <p class="px-4 py-3 font-normal text-sm text-textColor font-allFonts">Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante</p>
+                                    </div>
+                                </div>
+                            <!-- second part-->
+                                <div class="p-2 sm:w-1/2 w-full">
+                                    <div class="bg-whiteBackground rounded flex p-4 h-full items-center cursor-pointer mb-3">
+                                        <img src="./images/fifth-section/Fill (1).png" alt="">
+                                        <span class="font-normal text-base text-textColor font-allFonts pl-3 px-4 py-3">How long does my License last?</span>
+                                        <p class="px-4 py-3 font-normal text-sm text-textColor font-allFonts">Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante</p>
+                                    </div>
+                                </div>
+                            <!-- third part-->
+                                <div class="p-2 sm:w-1/2 w-full">
+                                    <div class="bg-whiteBackground rounded flex p-4 h-full items-center cursor-pointer mb-3">
+                                        <img src="./images/fifth-section/Fill (2).png" alt="">
+                                        <span class="font-normal text-base text-textColor font-allFonts pl-3 px-4 py-3">How do I get access to a theme?</span>
+                                        <p class="px-4 py-3 font-normal text-sm text-textColor font-allFonts">Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante</p>
+                                    </div>
+                                </div>
+                            <!-- fourth part-->
+                                <div class="p-2 sm:w-1/2 w-full">
+                                    <div class="bg-whiteBackground rounded flex p-4 h-full items-center cursor-pointer mb-3">
+                                        <img src="./images/fifth-section/Fill (3).png" alt="">
+                                        <span class="font-normal text-base text-textColor font-allFonts pl-3 px-4 py-3">How do I download my theme?</span>
+                                        <p class="px-4 py-3 font-normal text-sm text-textColor font-allFonts">Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante</p>
+                                    </div>
+                                </div>
+                            <!-- fifth part-->
+                                <div class="p-2 sm:w-1/2 w-full">
+                                    <div class="bg-whiteBackground rounded flex p-4 h-full items-center cursor-pointer mb-3">
+                                        <img src="./images/fifth-section/Fill (4).png" alt="">
+                                        <span class="font-normal text-base text-textColor font-allFonts pl-3 px-4 py-3">How do I see previous orders?</span>
+                                        <p class="px-4 py-3 font-normal text-sm text-textColor font-allFonts">Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante</p>
+                                    </div>
+                                </div>
+                            <!-- sixth part-->
+                                <div class="p-2 sm:w-1/2 w-full">
+                                    <div class="bg-whiteBackground rounded flex p-4 h-full items-center cursor-pointer mb-3">
+                                        <img src="./images/fifth-section/Fill (5).png" alt="">
+                                        <span class="font-normal text-base text-textColor font-allFonts pl-3 px-4 py-3">How do I contact Support?</span>
+                                        <p class="px-4 py-3 font-normal text-sm text-textColor font-allFonts">Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+        <!-- 6th section -->
+        <section class="mb-24" id="contact">
+            <div class="container px-5 py-24 mx-auto items-center lg:h-screen md:h-screen lg:w-screen md:w-screen">
+              <h1 class="sm:text-5xl text-[40px] font-allTitle font-bold text-textColor sm:mb-24 mb-24 sm:mt-14 md:mb-24 text-center">How To Contact Us</h1>
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                  <div class="h-full rounded">
+                    <input type="text" id="name" name="name" placeholder="Name" class="w-full mb-4 h-[4.375] py-3 px-3 bg-whiteBackground rounded text-base outline-none font-normal font-allFonts text-textColor">
+                 <br>
+                  <input type="email" id="email" name="email" placeholder="Email" class="w-full h-[4.375] mb-4 rounded outline-none py-3 px-3 bg-whiteBackground font-normal font-allFonts text-textColor">
+               <br>
+                  <textarea id="message" name="message"  class="h-32 leading-relaxed resize-none w-full h-[15.313rem] rounded outline-none py-1 px-3 bg-whiteBackground font-normal font-allFonts text-textColor" placeholder="Message"></textarea>
+              
+                <div class="justify-center pt-4">
+                  <button class="text-white bg-color border-0 py-2 px-6 focus:outline-none rounded-2xl text-base font-bold font-allFonts w-[11.688rem] h-14 hover:bg-selectTitleColor">Button</button>
+                </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="flex flex-wrap md:w-1/2 w-full">
+                    <div class="md:p-2 p-1 w-full lg:ml-2 mt-2">
+                        <img class="object-cover object-top rounded" alt="hero" src="./images/sixth-section/Rectangle.png">
+                    </div>
+
+                    
+                    <div class="md:p-2 p-1 w-1/2 md:mt-1"> 
+                            <a target="_blank" href="https://www.google.com/maps/@23.822337,90.3654296,15z" class="inline-flex items-center ml-16">
+                              <img alt="testimonial" src="./images/sixth-section/Rectangle 19.png" class="w-12 h-16 rounded-full  object-cover object-center lg:mt-6">
+                              <span class="flex-grow flex flex-col pl-4">
+                                <span class="font-bold font-allFonts text-textColor text-xl hover:text-color">Address</span>
+                              </span>
+                            </a> 
+                            <div class="text-textColor font-allFonts font-normal text-base m-[-20px]">
+                            <p class="ml-8">House 1334, Avenue 3, Mirpur DOHS,</p>
+                             <p class="ml-16">
+                                Dhaka 1216, Bangladesh</p> 
+                            </div>
+                    </div>
+
+                    <div class="md:p-2 p-1 w-1/2">
+                        <a href="tel:+880 140 6666 430" target="_blank" class="inline-flex items-center ml-8 ">
+                            <img alt="testimonial" src="./images/sixth-section/Rectangle 19 (1).png" class="w-12 h-16 rounded-full  object-cover object-center mt-6 hover:text-color hover:text-color">
+                            <span class="flex-grow flex flex-col pl-4">
+                              <span class="font-bold font-allFonts text-textColor text-xl hover:text-color">Phone</span>  
+                            </span>
+                            
+                          </a>
+                          <div class="">
+                            <p class="text-textColor font-allFonts font-normal text-base pl-14 m-[-20px]">+880 140 6666 430</p>
+                          </div>
+                            
+                          
+                          
+                    </div>
+               
+                  </div>
+                <!--  -->
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+            
+       
+              
+            
+          
+        </main>
+
+        <!-- footer sectionn  starts -->
+            <footer class="sm:w-screen w-screen md:w-screen bg-white drop-shadow-lg flex">
+                    <div class="items-center container h-[5.625rem] text-base font-bold text-textColor font-allFonts">
+                        <p class="text-center pt-8">© 2023 leen rights reserved</p>
+                    </div> 
+                    <a href="#any-question" class="pt-8 sm:pr-12 pr-8 "></a>
+            </footer>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+         <!-- responsive bar from navbar section  -->
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </body>
